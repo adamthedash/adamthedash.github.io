@@ -12,8 +12,8 @@
     <!-- config for our rust wasm binary. go to https://trunkrs.dev/assets/#rust for more customization -->
     
 <script type="module">
-import init, * as bindings from 'poe_crafting/app-624d925dfc673763.js';
-const wasm = await init({ module_or_path: 'poe_crafting/app-624d925dfc673763_bg.wasm' });
+import init, * as bindings from '/poe_crafting/app-624d925dfc673763.js';
+const wasm = await init({ module_or_path: '/poe_crafting/app-624d925dfc673763_bg.wasm' });
 
 
 window.wasmBindings = bindings;
@@ -23,7 +23,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
 
 </script>
     <!-- this is the base url relative to which other urls will be constructed. trunk will insert this from the public-url option -->
-    <base href="poe_crafting/" />
+    <base href="/poe_crafting/" />
 
     
 
@@ -116,7 +116,7 @@ dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
             }
         }
     </style>
-<link rel="modulepreload" href="poe_crafting/app-624d925dfc673763.js" crossorigin="anonymous" integrity="sha384-lU1JHgJTy3QximyVPqa8iajRXLUWvtvwlUjNTKJkDnkg2UYWxyfyq3nxH7e3WreH"><link rel="preload" href="poe_crafting/app-624d925dfc673763_bg.wasm" crossorigin="anonymous" integrity="sha384-B6kWZNY6NPU1span+8sN9bMiwSE4dm+ze18elXZ93X0ZRd0DTYbb2h1M1UyTeFiN" as="fetch" type="application/wasm"></head>
+<link rel="modulepreload" href="/poe_crafting/app-624d925dfc673763.js" crossorigin="anonymous" integrity="sha384-bCLzCE4BtHzU4Pk+ZWP7lbrLqSLn6f5UDDNExSNTh3DJN0BLHKW4b7UyVaJxIPxR"><link rel="preload" href="/poe_crafting/app-624d925dfc673763_bg.wasm" crossorigin="anonymous" integrity="sha384-CKO4lQNatW+5GQmOGiQyVnOWgU9CVB/cdcpAHlUtBads6xdNXEkwgKcifUn9cwry" as="fetch" type="application/wasm"></head>
 
 <body>
     <!-- The WASM code will resize the canvas dynamically -->
